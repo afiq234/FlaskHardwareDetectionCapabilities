@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      var car = {
+        type: "Toyota",
+        model: "yaris",
+        color: "White",
+        driveCar: () => {
+          console.log("Ryan Gosling POV: Im drive using car :" + car.model);
+        },
+        displayCar: function () {
+          console.log("I have " + this.type); //---> code "this.type" refers to the value of the type property
+        },
+      };
+
+      console.log(car.color);
+      console.log(car["model"]);
+
+      console.log(car.driveCar());
+      console.log(car.displayCar());
+    </script>
+  </body>
+</html>
